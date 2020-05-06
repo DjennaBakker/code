@@ -9,9 +9,17 @@ html {
 .loader_bg {
   position: fixed;
   z-index: 999999;
-  background-color: #fff;
+  background-color: #000;
   width: 100%;
   height: 100%; }
+
+.loader-text p {
+  color: #FFCBCB;
+  font-size: 40px;
+  font-family: 'Impact', Arial;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 600px; }
 
 .loader {
   border: 0 solid transparent;
@@ -19,8 +27,8 @@ html {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: calc(50vh - 75px);
-  left: calc(50vw - 75px); }
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px); }
   .loader:before, .loader:after {
     content: '';
     border: 1em solid #FFCBCB;
@@ -133,9 +141,6 @@ a {
 
 /*--------- my work sectie ---------------*/
 .work .items-work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0px 25px 0px 25px; }
   .work .items-work img {
     width: 90%;
@@ -329,19 +334,20 @@ footer {
 
   /*--------- my work sectie ---------------*/
   .work .items-work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0px 25px 0px 25px; }
     .work .items-work img {
-      width: 90%;
-      height: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      height: auto;
       padding: 20px; }
       .work .items-work img:hover {
         transform: scale(1.03);
         box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.59); }
     .work .items-work #aida, .work .items-work #aida1, .work .items-work #aida2 {
-      margin: 10px; }
+      margin: 10px;
+      text-align: center; }
   .work a {
     text-decoration: none; }
     .work a:hover {
@@ -482,11 +488,10 @@ footer {
     display: flex;
     padding: 10px; }
     .navigatie .logo {
-      width: 40%; }
+      width: 35%; }
     .navigatie ol {
       flex-flow: row; }
       .navigatie ol li {
-        padding: 0.5em;
         border: unset;
         float: left;
         margin-left: 50px; }
@@ -501,8 +506,8 @@ footer {
       display: none; }
     .navigatie .menu {
       display: flex;
-      justify-content: space-around;
-      width: 100%; }
+      width: 100%;
+      height: 0px; }
       .navigatie .menu a {
         flex: 1;
         justify-content: center;
@@ -510,7 +515,7 @@ footer {
     .navigatie .icon {
       display: flex;
       width: 30px;
-      margin-top: 50px;
+      margin-top: 40px;
       padding: 5px; }
 
   /*--------- hero sectie ---------------*/
