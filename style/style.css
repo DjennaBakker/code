@@ -2,6 +2,11 @@
 @font-face {
   font-family: 'Impact';
   src: url("impact.ttf"); }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', Arial; }
@@ -142,11 +147,14 @@ a {
   background-color: #E2E2E2;
   padding: 50px;
   height: 500px;
-  text-align: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
   .hero h1 {
     font-size: 48px;
-    text-align: center;
-    text-shadow: 2px 0px #FFCBCB; }
+    text-shadow: 2px 0px #FFCBCB;
+    text-align: center; }
 
 /*--------- my work sectie ---------------*/
 .work .items-work {
