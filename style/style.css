@@ -192,7 +192,7 @@ h2 {
 .aboutme {
   background-color: #E2E2E2;
   padding: 50px;
-  height: 525px; }
+  height: 650px; }
   .aboutme .foto {
     display: none; }
     .aboutme .foto .box4, .aboutme .foto .box5 {
@@ -206,7 +206,8 @@ h2 {
       font-size: 24px;
       margin: 0px; }
     .aboutme .informatie p {
-      font-size: 16px; }
+      font-size: 16px;
+      padding-bottom: 20px; }
     .aboutme .informatie .cv {
       padding: 5px 10px;
       background-color: black;
@@ -261,21 +262,7 @@ h2 {
       width: 20%;
       background-color: #fff;
       animation: js 5s; }
-@keyframes html {
-  0% {
-    width: 0%; }
-  100% {
-    width: 85%; } }
-@keyframes css {
-  0% {
-    width: 0%; }
-  100% {
-    width: 60%; } }
-@keyframes js {
-  0% {
-    width: 0%; }
-  100% {
-    width: 20%; } }
+
 /*--------- contact sectie ---------------*/
 .contactopnemen {
   padding: 10px; }
@@ -348,7 +335,7 @@ footer {
 
   /*--------- hero sectie ---------------*/
   .hero {
-    padding: 100px 35px 35px 35px;
+    padding: 35px 35px 35px 35px;
     height: 500px; }
     .hero h1 {
       font-size: 48px; }
@@ -403,8 +390,6 @@ footer {
     .navigatie .active {
       color: white;
       text-decoration: underline; }
-    .navigatie a {
-      font-size: 16px; }
     .navigatie #toggle {
       display: none; }
     .navigatie label[for="toggle"] {
@@ -415,11 +400,12 @@ footer {
       width: 100%; }
       .navigatie .menu a {
         flex: 1;
-        border: none; }
+        border: none;
+        font-size: 18px; }
     .navigatie .icon {
       display: flex;
       width: 25px;
-      margin-top: 50px;
+      margin-top: 40px;
       padding: 5px; }
 
   /*--------- hero sectie ---------------*/
@@ -515,8 +501,6 @@ footer {
         border: unset;
         float: left;
         margin-left: 50px; }
-        .navigatie ol li a {
-          font-size: 20px; }
     .navigatie .active {
       color: white;
       text-decoration: underline; }
@@ -531,11 +515,12 @@ footer {
       .navigatie .menu a {
         flex: 1;
         justify-content: center;
-        border: none; }
+        border: none;
+        font-size: 20px; }
     .navigatie .icon {
       display: flex;
       width: 30px;
-      margin-top: 40px;
+      margin-top: 35px;
       padding: 5px; }
 
   /*--------- hero sectie ---------------*/
@@ -588,7 +573,9 @@ footer {
       transform: rotate(60deg); }
     .aboutme .foto img {
       width: 60%;
-      height: 100%; }
+      height: 100%;
+      margin-top: 40px;
+      margin-left: 40px; }
   .aboutme .informatie {
     width: 60%; }
     .aboutme .informatie h2 {
