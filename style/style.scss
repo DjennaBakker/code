@@ -118,21 +118,23 @@ h3{
 
 /*mobiel*/
 /*--------- header/nav sectie ---------------*/
-  .navigatie{
-  	background-color: #FFCBCB;
-  	padding: 15px;
+   .navigatie{
+    background-color: #FFCBCB;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
 
-  	.logo {
-  		width: 10%;
-  		height: auto;
-  		padding: 10px;
-  	}
+    .logo {
+      width: 10%;
+      height: auto;
+      padding: 10px;
+    }
 
-  	ol{
-  		text-decoration: none;
-  		
-  		li{
-  			list-style: none;
+    ol{
+      text-decoration: none;
+      
+      li{
+        list-style: none;
         text-decoration: none;
 
         a{
@@ -143,47 +145,47 @@ h3{
             color: white;
           }
         }
-  		}
-  	}
+      }
+    }
 
     .active{
       color: white;
       text-decoration: underline;
     }
 
-  	.menu{
-  	  	display: none;
-  	  	margin: 0px;
-  	  	padding: 0px;
-  	
-  		a{
-  	  	margin: 0px;
-  	  	display: block;
-  	  	text-decoration: none;
-  	  	text-align: left;
-  	  	padding: 32px;
+    .menu{
+        display: none;
+        margin: 0px;
+        padding: 0px;
+    
+      a{
+        margin: 0px;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        padding: 32px;
         border-top: 1px solid black;
         font-size: 13px;
         font-weight: bolder;
-  		}
-  	}
-  	
-  	label{
-  	  	display: block;
-  	  	cursor: pointer;
-  	  	float: right;
-  	  	font-size: 75px;
-  	  	margin-right: 20px;
-  	}
+      }
+    }
+    
+    label{
+        display: block;
+        cursor: pointer;
+        float: right;
+        font-size: 75px;
+        margin-right: 20px;
+    }
 
-  	#toggle{
-  	  	display: none;
+    #toggle{
+        display: none;
 
-  		&:checked + .menu{
-  			display: block; 
-  		}
-  	}
-  	
+      &:checked + .menu{
+        display: block; 
+      }
+    }
+    
     .icon{
       display: none;
     }
@@ -355,47 +357,47 @@ h3{
         .html {
           width: 85%; 
           background-color: #fff;
-          // animation: html 5s;
+          animation: html 10s;
         }
         
         .css{
           width: 60%; 
           background-color: #fff;
-          // animation: css 5s;
+          animation: css 10s;
         }
 
         .js {
           width: 20%; 
           background-color: #fff;
-          // animation: js 5s;
+          animation: js 10s;
         }
 
-        // @keyframes html{
-        //   0%{
-        //     width: 0%;
-        //   }
-        //   100%{
-        //     width: 85%;
-        //   }
-        // }
+        @keyframes html{
+          0%{
+            width: 0%;
+          }
+          100%{
+            width: 85%;
+          }
+        }
 
-        // @keyframes css{
-        //   0%{
-        //     width: 0%;
-        //   }
-        //   100%{
-        //     width: 60%;
-        //   }
-        // }
+        @keyframes css{
+          0%{
+            width: 0%;
+          }
+          100%{
+            width: 60%;
+          }
+        }
 
-        // @keyframes js{
-        //   0%{
-        //     width: 0%;
-        //   }
-        //   100%{
-        //     width: 20%;
-        //   }
-        // }
+        @keyframes js{
+          0%{
+            width: 0%;
+          }
+          100%{
+            width: 20%;
+          }
+        }
       } //einde informatie
     
     } //einde .aboutme
@@ -493,14 +495,20 @@ h3{
 
 /*Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+.vl{
+  height: 75px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 /*--------- header/nav sectie ---------------*/ 
   .navigatie {
+
     label{
       font-size: 50px;
     }
     
     .logo{
-      width: 5%;
+      width: 7%;
     }
   } //einde .navigatie
 
@@ -532,9 +540,10 @@ h3{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 70%;
         height: auto;
         padding: 20px;
+        z-index: 1;
 
         &:hover{
           transform: scale(1.03);
@@ -566,17 +575,57 @@ h3{
     }
   } //einde .work
 
-  
+/*--------- about me sectie ---------------*/
+  .aboutme{
+    height: 600px;
+    
+    .informatie{
+      .titel-skills{
+        margin: 25px 0px 10px 0px;
+        padding: 0;
+      }
+    }
+
+  } //einde .aboutme
+
+/*--------- contact opnemen sectie ---------------*/
+  .contactopnemen{
+    .formulier{
+      margin-top: 25px;
+    }
+  }
+
+/*--------- footer sectie ---------------*/
+  footer{
+    p{
+      font-size: 13px;
+    }
+
+    .footer-icons{
+      .icons{
+        width: 30px;
+      }
+    }
+  }
 
 } //einde tablet
 
 /*Laptop*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
+  body h2{
+    font-size: 40px;
+  }
+
+  .vl{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 /*--------- header/nav sectie ---------------*/
   .navigatie{
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 125px;
     
     .logo{
       width: 80px;
@@ -620,7 +669,8 @@ h3{
 
     .icon{
       display: flex;
-      width: 25px;
+      width: 30px;
+      height: 30px;
       margin-top: 40px;
       padding: 5px;
     }
@@ -670,14 +720,11 @@ h3{
         color: #FFCBCB;
       }
     }
-
-    h2{
-      font-size: 50px;
-    }
 } //einde .work
 
 /*--------- about me sectie ---------------*/
   .aboutme{
+    height: 575px;
 
     .about{
       float: left;
@@ -734,6 +781,7 @@ h3{
 
       .titel-skills{
         margin: 25px 0px 10px 0px;
+        padding: 0;
       }
     }
   } //einde .aboutme
@@ -741,6 +789,10 @@ h3{
   /*--------- contact sectie ---------------*/
   .contactopnemen{
     padding: 20px;
+
+    .formulier{
+      margin-top: 25px;
+    }
   } //einde .contactopnemen
   
   /*--------- footer sectie ---------------*/
@@ -750,13 +802,15 @@ h3{
     }
 
     .footer-menu a{
-      font-size: 20px;
+      font-size: 16px;
+    }
+
+    .footer-icons{
+      .icons{
+        width: 35px;
+      }
     }
   } //einde footer
-
-  body h2{
-    font-size: 32px;
-  }
 
 }//einde laptop
 
@@ -809,7 +863,7 @@ h3{
 
     .icon{
       display: flex;
-      width: 30px;
+      width: 35px;
       margin-top: 35px;
       padding: 5px;
     }
@@ -931,6 +985,7 @@ h3{
     .formulier{
       max-width: 1000px;
       margin: auto;
+      margin-top: 25px;
       
       .fname{
         width: 1000px;
@@ -976,7 +1031,7 @@ h3{
 
       .footer-icons{
         .icons{
-          width: 25px;
+          width: 30px;
           padding: 5px;
         }
 
@@ -989,5 +1044,6 @@ h3{
   
   body h2{
     font-size: 40px;
+    margin-bottom: 25px;
   }
 } //einde van grote desktop

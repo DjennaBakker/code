@@ -95,7 +95,9 @@ h3 {
 /*--------- header/nav sectie ---------------*/
 .navigatie {
   background-color: #FFCBCB;
-  padding: 15px; }
+  padding: 15px;
+  position: absolute;
+  width: 100%; }
   .navigatie .logo {
     width: 10%;
     height: auto;
@@ -253,16 +255,30 @@ h2 {
     .aboutme .informatie .html {
       width: 85%;
       background-color: #fff;
-      animation: html 5s; }
+      animation: html 10s; }
     .aboutme .informatie .css {
       width: 60%;
       background-color: #fff;
-      animation: css 5s; }
+      animation: css 10s; }
     .aboutme .informatie .js {
       width: 20%;
       background-color: #fff;
-      animation: js 5s; }
-
+      animation: js 10s; }
+@keyframes html {
+  0% {
+    width: 0%; }
+  100% {
+    width: 85%; } }
+@keyframes css {
+  0% {
+    width: 0%; }
+  100% {
+    width: 60%; } }
+@keyframes js {
+  0% {
+    width: 0%; }
+  100% {
+    width: 20%; } }
 /*--------- contact sectie ---------------*/
 .contactopnemen {
   padding: 10px; }
@@ -327,11 +343,16 @@ footer {
 
 /*Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .vl {
+    height: 75px;
+    margin-top: 35px;
+    margin-bottom: 35px; }
+
   /*--------- header/nav sectie ---------------*/
   .navigatie label {
     font-size: 50px; }
   .navigatie .logo {
-    width: 5%; }
+    width: 7%; }
 
   /*--------- hero sectie ---------------*/
   .hero {
@@ -352,9 +373,10 @@ footer {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 75%;
+      width: 70%;
       height: auto;
-      padding: 20px; }
+      padding: 20px;
+      z-index: 1; }
       .work .items-work img:hover {
         transform: scale(1.03);
         box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.59); }
@@ -369,14 +391,39 @@ footer {
     font-family: 'Impact', Arial;
     font-size: 24px; }
   .work p {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  /*--------- about me sectie ---------------*/
+  .aboutme {
+    height: 600px; }
+    .aboutme .informatie .titel-skills {
+      margin: 25px 0px 10px 0px;
+      padding: 0; }
+
+  /*--------- contact opnemen sectie ---------------*/
+  .contactopnemen .formulier {
+    margin-top: 25px; }
+
+  /*--------- footer sectie ---------------*/
+  footer p {
+    font-size: 13px; }
+  footer .footer-icons .icons {
+    width: 30px; } }
 /*Laptop*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  body h2 {
+    font-size: 40px; }
+
+  .vl {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+
   /*--------- header/nav sectie ---------------*/
   .navigatie {
     display: flex;
     justify-content: center;
-    align-content: center; }
+    align-content: center;
+    height: 125px; }
     .navigatie .logo {
       width: 80px;
       padding-top: 10px; }
@@ -404,7 +451,8 @@ footer {
         font-size: 18px; }
     .navigatie .icon {
       display: flex;
-      width: 25px;
+      width: 30px;
+      height: 30px;
       margin-top: 40px;
       padding: 5px; }
 
@@ -434,60 +482,62 @@ footer {
       text-decoration: none; }
       .work a:hover {
         color: #FFCBCB; }
-    .work h2 {
-      font-size: 50px; }
 
   /*--------- about me sectie ---------------*/
-  .aboutme .about {
-    float: left; }
-  .aboutme .foto {
-    display: block;
-    width: 40%;
-    padding: 50px 0px 0px 0px; }
-    .aboutme .foto .box4, .aboutme .foto .box5 {
+  .aboutme {
+    height: 575px; }
+    .aboutme .about {
+      float: left; }
+    .aboutme .foto {
       display: block;
-      border: 3px;
-      border-style: solid;
-      border-color: white;
-      width: 225px;
-      height: 225px;
-      margin-left: 10px;
-      margin-top: 15px;
-      position: absolute; }
-    .aboutme .foto .box4 {
-      transform: rotate(30deg); }
-    .aboutme .foto .box5 {
-      transform: rotate(60deg); }
-    .aboutme .foto img {
-      width: 70%;
-      height: 100%; }
-  .aboutme .informatie {
-    width: 60%; }
-    .aboutme .informatie h2 {
-      text-align: left;
-      margin: 0px 0px 25px 0px; }
-    .aboutme .informatie .cv {
-      padding: 5px 20px;
-      font-size: 20px; }
-    .aboutme .informatie .contact {
-      padding: 5px 20px;
-      margin-left: 15px;
-      font-size: 20px; }
-    .aboutme .informatie .titel-skills {
-      margin: 25px 0px 10px 0px; }
+      width: 40%;
+      padding: 50px 0px 0px 0px; }
+      .aboutme .foto .box4, .aboutme .foto .box5 {
+        display: block;
+        border: 3px;
+        border-style: solid;
+        border-color: white;
+        width: 225px;
+        height: 225px;
+        margin-left: 10px;
+        margin-top: 15px;
+        position: absolute; }
+      .aboutme .foto .box4 {
+        transform: rotate(30deg); }
+      .aboutme .foto .box5 {
+        transform: rotate(60deg); }
+      .aboutme .foto img {
+        width: 70%;
+        height: 100%; }
+    .aboutme .informatie {
+      width: 60%; }
+      .aboutme .informatie h2 {
+        text-align: left;
+        margin: 0px 0px 25px 0px; }
+      .aboutme .informatie .cv {
+        padding: 5px 20px;
+        font-size: 20px; }
+      .aboutme .informatie .contact {
+        padding: 5px 20px;
+        margin-left: 15px;
+        font-size: 20px; }
+      .aboutme .informatie .titel-skills {
+        margin: 25px 0px 10px 0px;
+        padding: 0; }
 
   /*--------- contact sectie ---------------*/
   .contactopnemen {
     padding: 20px; }
+    .contactopnemen .formulier {
+      margin-top: 25px; }
 
   /*--------- footer sectie ---------------*/
   footer .logo {
     width: 10%; }
   footer .footer-menu a {
-    font-size: 20px; }
-
-  body h2 {
-    font-size: 32px; } }
+    font-size: 16px; }
+  footer .footer-icons .icons {
+    width: 35px; } }
 /*Grote desktop*/
 @media only screen and (min-width: 1440px) {
   .navigatie {
@@ -519,7 +569,7 @@ footer {
         font-size: 20px; }
     .navigatie .icon {
       display: flex;
-      width: 30px;
+      width: 35px;
       margin-top: 35px;
       padding: 5px; }
 
@@ -596,7 +646,8 @@ footer {
     padding: 10px; }
     .contactopnemen .formulier {
       max-width: 1000px;
-      margin: auto; }
+      margin: auto;
+      margin-top: 25px; }
       .contactopnemen .formulier .fname {
         width: 1000px; }
       .contactopnemen .formulier .lname {
@@ -619,12 +670,13 @@ footer {
     footer .footer-tekst a:hover {
       color: white; }
   footer .footer-icons .icons {
-    width: 25px;
+    width: 30px;
     padding: 5px; }
   footer .footer-icons a {
     text-decoration: none; }
 
   body h2 {
-    font-size: 40px; } }
+    font-size: 40px;
+    margin-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
