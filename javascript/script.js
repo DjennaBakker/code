@@ -8,7 +8,7 @@ setTimeout(function(){
 //# sourceMappingURL=typed.min.js.map
 
 var typed = new Typed(document.querySelector(".typewriter"), {
-  strings: ["visitor.", "friend.", "webdesigner.", "visual designer.", "future client.",],
+  strings: ["visitor.", "friend.", "webdesigner.", "visual designer.", "future client.", "visitor."],
   typeSpeed: 100
 });
 

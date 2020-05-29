@@ -348,6 +348,9 @@ footer {
     margin-top: 35px;
     margin-bottom: 35px; }
 
+  h2 {
+    font-size: 32px; }
+
   /*--------- header/nav sectie ---------------*/
   .navigatie label {
     font-size: 50px; }
