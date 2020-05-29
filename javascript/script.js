@@ -13,18 +13,14 @@ var typed = new Typed(document.querySelector(".typewriter"), {
 });
 
 //progress bars
-// var tl = new TimelineMax();
-// const controller = new ScrollMagic.Controller();
 
-// tl.from(".html", 1, {width: '0%', opacity: 0});
-// tl.to(".html", 1, {width: '85%'});
 
-// tl.from(".css", 1, {width: '0', opacity: 0});
+var topofDiv = $(".about").offset().top; 
 
-// tl.from(".js", 1, {width: '0', opacity: 0});
-
-// const scene = new ScrollMagic.scene({
-// 	triggerElement: '.about'
-// }) 
-// 	.setTween(tl)
-// 		.addTo(controller);
+$(window).scroll(function(){
+    if($(window).scrollTop() > (topofDiv - $( window ).height() )){
+       $("#html").addClass("html");
+       $("#css").addClass("css");
+       $("#js").addClass("js");
+    }
+});
