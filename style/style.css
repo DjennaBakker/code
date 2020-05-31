@@ -21,20 +21,20 @@ html {
 
 .loader-text p {
   color: #FFCBCB;
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Impact', Arial;
   text-align: center;
   letter-spacing: 3px;
-  margin-top: 600px; }
+  margin-top: 800px; }
 
 .loader {
   border: 0 solid transparent;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top: calc(50vh - 100px);
-  left: calc(50vw - 100px); }
+  top: calc(50vh - 120px);
+  left: calc(50vw - 120px); }
   .loader:before, .loader:after {
     content: '';
     border: 1em solid #FFCBCB;
@@ -99,7 +99,7 @@ h3 {
   position: absolute;
   width: 100%; }
   .navigatie .logo {
-    width: 10%;
+    width: 20%;
     height: auto;
     padding: 10px; }
   .navigatie ol {
@@ -132,7 +132,7 @@ h3 {
     display: block;
     cursor: pointer;
     float: right;
-    font-size: 75px;
+    font-size: 100px;
     margin-right: 20px; }
   .navigatie #toggle {
     display: none; }
@@ -165,7 +165,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 60%;
     height: auto;
     padding: 20px; }
     .work .items-work img:hover {
@@ -415,6 +415,9 @@ footer {
     width: 30px; } }
 /*Laptop*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .loader-text p {
+    margin-top: 150px; }
+
   body h2 {
     font-size: 40px; }
 
@@ -547,6 +550,9 @@ footer {
     width: 35px; } }
 /*Grote desktop*/
 @media only screen and (min-width: 1440px) {
+  .loader-text p {
+    margin-top: 225px; }
+
   .navigatie {
     display: flex;
     padding: 10px; }

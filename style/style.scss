@@ -27,21 +27,21 @@ html{
 
 .loader-text p{
   color: #FFCBCB;
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Impact', Arial;
   text-align: center;
   letter-spacing: 3px;
-  margin-top: 600px;
+  margin-top: 800px;
 }
 
 .loader{
   border: 0 solid transparent;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top: calc(50vh - 100px);
-  left: calc(50vw - 100px);
+  top: calc(50vh - 120px);
+  left: calc(50vw - 120px);
 
   &:before, &:after{
     content: '';
@@ -125,7 +125,7 @@ h3{
     width: 100%;
 
     .logo {
-      width: 10%;
+      width: 20%;
       height: auto;
       padding: 10px;
     }
@@ -174,7 +174,7 @@ h3{
         display: block;
         cursor: pointer;
         float: right;
-        font-size: 75px;
+        font-size: 100px;
         margin-right: 20px;
     }
 
@@ -197,7 +197,11 @@ h3{
 
   /*--------- hero sectie ---------------*/
   .hero{
-  	background-color: #E2E2E2;
+    // background-image: url("../img/blossom.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: #E2E2E2;
   	padding: 50px;
   	height: 600px;
     display: flex;
@@ -222,7 +226,7 @@ h3{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 60%;
         height: auto;
         padding: 20px;
 
@@ -618,6 +622,10 @@ h2{
 
 /*Laptop*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
+ .loader-text p{
+    margin-top: 150px;
+  }
+
   body h2{
     font-size: 40px;
   }
@@ -822,6 +830,9 @@ h2{
 
 /*Grote desktop*/
 @media only screen and (min-width: 1440px){
+  .loader-text p{
+    margin-top: 225px;
+  }
 // /*--------- header/nav sectie ---------------*/
   .navigatie{
     display: flex;
