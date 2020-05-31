@@ -13,8 +13,6 @@ var typed = new Typed(document.querySelector(".typewriter"), {
 });
 
 //progress bars
-
-
 var topofDiv = $(".about").offset().top; 
 
 $(window).scroll(function(){

@@ -199,7 +199,7 @@ h3{
   .hero{
   	background-color: #E2E2E2;
   	padding: 50px;
-  	height: 500px;
+  	height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,19 +357,19 @@ h3{
         .html {
           width: 85%; 
           background-color: #fff;
-          animation: html 10s;
+          animation: html 7s;
         }
         
         .css{
           width: 60%; 
           background-color: #fff;
-          animation: css 10s;
+          animation: css 7s;
         }
 
         .js {
           width: 20%; 
           background-color: #fff;
-          animation: js 10s;
+          animation: js 7s;
         }
 
         @keyframes html{
@@ -523,6 +523,7 @@ h2{
     
     h1{
       font-size: 48px;
+      margin-top: 100px;
     }
   } //einde .hero
 
@@ -668,7 +669,7 @@ h2{
         a{
           flex: 1;
           border: none;
-          font-size: 18px;
+          font-size: 16px;
         }
      }
 
@@ -683,11 +684,11 @@ h2{
 
 /*--------- hero sectie ---------------*/
   .hero{
+    height: 600px;
 
     h1{
-      font-size: 35px;
-      // margin-top: 120px;
-      // margin-left: 75px;
+      font-size: 50px;
+      margin-top: 100px;
     }
   } //einde .hero
 
@@ -708,7 +709,7 @@ h2{
         padding: 20px;
 
         &:hover{
-          transform: scale(1.03);
+          transform: scale(1.01);
           box-shadow: 6px 6px 10px 1px rgba(0,0,0,0.59);
         }
       }
@@ -876,6 +877,7 @@ h2{
 
 /*--------- hero sectie ---------------*/
   .hero{
+    height: 750px;
 
     h1{
       font-size: 45px;
