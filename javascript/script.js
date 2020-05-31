@@ -1,4 +1,4 @@
-// Loader page
+// Loader page animation
 setTimeout(function(){
 	$('.loader_bg').fadeToggle();
 }, 2000);
@@ -11,7 +11,7 @@ var typed = new Typed(document.querySelector(".typewriter"), {
   typeSpeed: 100
 });
 
-//progress bars
+//progress bars animation
 var topofDiv = $(".about").offset().top; 
 
 $(window).scroll(function(){
