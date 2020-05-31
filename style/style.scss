@@ -31,7 +31,7 @@ html{
   font-family: 'Impact', Arial;
   text-align: center;
   letter-spacing: 3px;
-  margin-top: 800px;
+  margin-top: 600px;
 }
 
 .loader{
@@ -197,10 +197,6 @@ h3{
 
   /*--------- hero sectie ---------------*/
   .hero{
-    // background-image: url("../img/blossom.jpg");
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     background-color: #E2E2E2;
   	padding: 50px;
   	height: 600px;
@@ -622,10 +618,6 @@ h2{
 
 /*Laptop*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
- .loader-text p{
-    margin-top: 150px;
-  }
-
   body h2{
     font-size: 40px;
   }
@@ -830,9 +822,6 @@ h2{
 
 /*Grote desktop*/
 @media only screen and (min-width: 1440px){
-  .loader-text p{
-    margin-top: 225px;
-  }
 // /*--------- header/nav sectie ---------------*/
   .navigatie{
     display: flex;
